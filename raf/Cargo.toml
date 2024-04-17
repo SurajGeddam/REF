@@ -1,0 +1,33 @@
+[package]
+name = "telegram-raf"
+version = "0.1.1"
+description = "REF: bot for creating referral-based contests for your Telegram channels, groups and supergroups"
+readme = "README.md"
+edition = "2024"
+default-run = "raf"
+keywords = ["telegram", "bot", "referral"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+chrono = "0.4.26"
+data-encoding = "2.4.0"
+default = "0.1.2"
+hyper = "0.14.27"
+hyper-tls = "0.5.0"
+log = "0.4.20"
+r2d2 = "0.8.10"
+r2d2_sqlite = "0.22.0"
+regex = "1.9.4"
+simple_logger = "4.2.0"
+tabular = "0.2.0"
+typemap = "0.3.3"
+url = "2.4.1"
+telexide-fork = "0.2.3"
+
+[dependencies.rusqlite]
+features = ["chrono"]
+version = "0.29.0"
+
+[dependencies.tokio]
+features = ["full"]
+version = "1.32.0"
